@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import backgroundImage from './images/f1_logo.jpg'; // import the background image
 
+//this is proper skitz
+
 const App = () => {
   const [isLeftHovered, setIsLeftHovered] = useState(false);
   const [isRightHovered, setIsRightHovered] = useState(false);

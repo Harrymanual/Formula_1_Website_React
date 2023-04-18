@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import backgroundImage from './images/f1_logo.jpg'; // import the background image
+import {useNavigate, Route, Routes} from 'react-router-dom';
 
-//this is proper skitz
+import DriversPage from './DriversPage';
+import TeamsPage from './TeamsPage';
 
 const App = () => {
   const [isLeftHovered, setIsLeftHovered] = useState(false);
   const [isRightHovered, setIsRightHovered] = useState(false);
+  const navigate = useNavigate();
 
   const handleLeftHover = () => {
     setIsLeftHovered(true);
@@ -50,6 +53,7 @@ const App = () => {
         onClick={() => {
           // handle left button click
           console.log('Teams button clicked');
+          navigate('/teams')
         }}
       >  
         <button style={{ fontSize: '48px', border: 'none', background: 'transparent', cursor: 'pointer'}}>
@@ -73,12 +77,18 @@ const App = () => {
         onClick={() => {
           // handle left button click
           console.log('Drivers button clicked');
+          navigate('/drivers')
         }}
       >
         <button style={{ fontSize: '48px', border: 'none', background: 'transparent', cursor: 'pointer'}}>
           Drivers
         </button>
       </div>
+
+      <Routes>
+          <Route path="/teams" element={<TeamsPage />} />
+          <Route path="/drivers" element={<DriversPage />} />
+      </Routes>
 
     </div>
   );

@@ -7,8 +7,9 @@ const rootElement = document.getElementById('root');
 
 // Use createRoot to create a root and render the app inside it
 ReactDOM.createRoot(rootElement).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );

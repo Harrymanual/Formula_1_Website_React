@@ -1,15 +1,18 @@
+import backgroundImage from './images/driver_paper.jpg';
+
 const DriversPage = () => {
   return (
     <div
       style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "red",
+        minHeight: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
       }}
     >
-      <h1 style={{ textAlign: "center", color: "white" }}>Drivers Page</h1>
+      <h1>Drivers Page</h1>
     </div>
   );
 };

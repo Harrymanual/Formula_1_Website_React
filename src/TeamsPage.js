@@ -1,6 +1,11 @@
 import backgroundImage from './images/team_logos_updated.png';
+import { useNavigate } from 'react-router-dom';
+
 
 const TeamsPage = () => {
+  const navigate = useNavigate();
+  
+
   return (
     <div
       style={{
@@ -15,6 +20,7 @@ const TeamsPage = () => {
       }}
     >
       <h1>Teams Page</h1>
+
     </div>
   );
 };

@@ -15,16 +15,16 @@ import './TeamsPage.css';
 const TeamsPage = () => {
   const navigate = useNavigate();
   const images = [
-    { src: redbull, alt: "Red Bull #mostawesometeam", path: "/page1" },
-    { src: merc, alt: "Merc #2ndbestteam", path: "/page2" },
-    { src: sf, alt: "rarri #whatcanisay #beststrategy", path: "/page3" },
-    { src: aston, alt: "aston #whyisstrollinthatrocket", path: "/page4" },
-    { src: renault, alt: "alpine #akabeerbudgetchampagne", path: "/page5" },
-    { src: alpha, alt: "alpha tauri #bteam", path: "/page6" },
-    { src: alfa, alt: "audi", path: "/page7" },
-    { src: williams, alt: "williams", path: "/page8" },
-    { src: mchonda, alt: "mchonda", path: "/page9" },
-    { src: haas, alt: "?", path: "/page10" },
+    { src: redbull, alt: "Red Bull #mostawesometeam", path: "/teams/red-bull" },
+    { src: merc, alt: "Merc #2ndbestteam", path: "/teams/mercedes" },
+    { src: sf, alt: "rarri #whatcanisay #beststrategy", path: "/teams/ferrari" },
+    { src: aston, alt: "aston #whyisstrollinthatrocket", path: "/teams/aston-martin" },
+    { src: renault, alt: "alpine #akabeerbudgetchampagne", path: "/teams/alpine" },
+    { src: alpha, alt: "alpha tauri #bteam", path: "/teams/alpha-tauri" },
+    { src: alfa, alt: "audi", path: "/teams/audi" },
+    { src: williams, alt: "williams", path: "/teams/williams" },
+    { src: mchonda, alt: "mchonda", path: "/teams/mclaren" },
+    { src: haas, alt: "?", path: "/teams/haas" },
   ];
 
   return (

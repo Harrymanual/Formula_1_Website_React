@@ -1,13 +1,13 @@
 .teams-page {
-    background-color: black;
-  }
+  background-color: black;
+}
 
 .teams-page button {
-    background-color: gray;
-    border-radius: 10px;
-    border: none;
-    overflow: hidden;
-    height: 100%;
+  background-color: gray;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  height: 100%;
 }
 
 .teams-page button:hover {
@@ -18,4 +18,9 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: all 0.5s ease-in-out; /* adds a transition effect to the hover state */
+}
+
+.teams-page img:hover {
+  filter: brightness(50%); /* applies a 50% black overlay to the image */
 }

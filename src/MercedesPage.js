@@ -4,7 +4,7 @@ import mercedes from './images/merrc.jpg';
 
 const MercedesPage = () => {
   return (
-    <TeamPage teamName="Mercedes" imageSrc={mercedes} />
+    <TeamPage teamName="Mercedes" imageSrc={mercedes} description = "mercedes bad booo"/>
   );
 };
 

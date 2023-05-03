@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import backgroundImage from './images/f1_logo.jpg';
 import { useNavigate } from 'react-router-dom';
+import teamsImage from './images/Teams.png';
+import driversImage from './images/Drivers.png';
 
 const Homepage = () => {
   const [isLeftHovered, setIsLeftHovered] = useState(false);
@@ -52,9 +54,11 @@ const Homepage = () => {
           navigate('/teams')
         }}
       >  
-        <button style={{ fontSize: '48px', border: 'none', background: 'transparent', cursor: 'pointer'}}>
-          Teams
-        </button>
+        <img
+          src={teamsImage}
+          alt="Teams"
+          style={{ width: '80%', height: '80%', cursor: 'pointer', marginTop: '250px' }}
+        />
       </div>
 
       <div
@@ -74,9 +78,11 @@ const Homepage = () => {
           navigate('/drivers')
         }}
       >
-        <button style={{ fontSize: '48px', border: 'none', background: 'transparent', cursor: 'pointer'}}>
-          Drivers
-        </button>
+        <img
+          src={driversImage}
+          alt="Drivers"
+          style={{ width: '80%', height: '80%',  cursor: 'pointer', marginTop: '250px' }}
+        />
       </div>
     </div>
   );

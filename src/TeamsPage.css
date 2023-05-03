@@ -11,7 +11,7 @@
 }
 
 .teams-page button:hover {
-  cursor: pointer;
+  cursor: pointer; /* adds a pointer instead of the default cursor*/
 }
 
 .teams-page img {

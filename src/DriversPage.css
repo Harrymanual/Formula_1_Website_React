@@ -1,0 +1,26 @@
+.driver-page {
+    background-color: black;
+  }
+  
+  .driver-page button {
+    background-color: rgb(100, 118, 146);
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .driver-page button:hover {
+    cursor: pointer; /* adds a pointer instead of the default cursor*/
+  }
+  
+  .driver-page img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out; /* adds a transition effect to the hover state */
+  }
+  
+  .driver-page img:hover {
+    filter: brightness(50%); /* applies a 50% black overlay to the image */
+  }

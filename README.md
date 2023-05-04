@@ -1,2 +1,4 @@
-# Formula_1_Website_React
- f1 passion project
+# Design choice
+
+Hello, how are you doing. 
+So basically here is where I am at. I want to make the driver and team pages scrape data from the official formula 1 website and refresh everytime I update the page. Make my own API if you will and communicate with a server running python. The biggest issue is that I am dirt poor and dont want to pay 7 dollars a month for the sake of hoowing real time formula 1 data on my website because it literally doesnt matter. So instead of doing it all via copy and paste im gonna make a python script and whack it somewhere in this repo. This python script will scrape the data from the website, smack it into a text file and then my javascript is going to steal the information from that text file and input it into the html I hope. To tie it all together I would like to make a bash script that somehow i just run and it runs the python file and then makes the javascript update??? i dont really know but thats a future me problem. 

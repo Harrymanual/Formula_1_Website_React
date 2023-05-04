@@ -23,21 +23,21 @@ const DriversPage = () => {
 
   const images = [
     { src: ver, alt: "verstappen", path: "/drivers/verstappen" },
-    { src: alb, alt: "albon", path: "/drivers/albon" },
-    { src: alo, alt: "alonso", path: "/drivers/alonso" },
-    { src: bot, alt: "bottas", path: "/drivers/bottas" },
-    { src: gas, alt: "gasly", path: "/drivers/gasly" },
-    { src: gua, alt: "guanyou", path: "/drivers/guanyou" },
+    { src: per, alt: "perez", path: "/drivers/perez" },
     { src: ham, alt: "hamilton", path: "/drivers/hamilton" },
+    { src: rus, alt: "russell", path: "/drivers/russell" },
     { src: lec, alt: "leclerc", path: "/drivers/leclerc" },
+    { src: sai, alt: "sainz", path: "/drivers/sainz" },
+    { src: tsu, alt: "tsunoda", path: "/drivers/tsunoda" },
+    { src: alo, alt: "alonso", path: "/drivers/alonso" },
+    { src: str, alt: "stroll", path: "/drivers/stroll" },
+    { src: oco, alt: "ocon", path: "/drivers/ocon" },
+    { src: gas, alt: "gasly", path: "/drivers/gasly" },
+    { src: alb, alt: "albon", path: "/drivers/albon" },
+    { src: bot, alt: "bottas", path: "/drivers/bottas" },
+    { src: gua, alt: "guanyou", path: "/drivers/guanyou" },
     { src: mag, alt: "magnussen", path: "/drivers/magnussen" },
     { src: nor, alt: "norris", path: "/drivers/norris" },
-    { src: oco, alt: "ocon", path: "/drivers/ocon" },
-    { src: per, alt: "perez", path: "/drivers/perez" },
-    { src: rus, alt: "russell", path: "/drivers/russell" },
-    { src: sai, alt: "sainz", path: "/drivers/sainz" },
-    { src: str, alt: "stroll", path: "/drivers/stroll" },
-    { src: tsu, alt: "tsunoda", path: "/drivers/tsunoda" },
   ];
 
 

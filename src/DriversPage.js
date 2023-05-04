@@ -1,21 +1,20 @@
-import backgroundImage from './images/driver_paper.jpg';
 import { useNavigate } from 'react-router-dom';
-import ver from './images/DriverPhotos/Ver.png';
-import alb from './images/DriverPhotos/Alb.png';
-import alo from './images/DriverPhotos/Alo.png';
-import bot from './images/DriverPhotos/Bot.png';
-import gas from './images/DriverPhotos/Gas.png';
-import gua from './images/DriverPhotos/Gua.png';
-import ham from './images/DriverPhotos/Ham.png';
-import lec from './images/DriverPhotos/Lec.png';
-import mag from './images/DriverPhotos/Mag.png';
-import nor from './images/DriverPhotos/Nor.png';
-import oco from './images/DriverPhotos/Oco.png';
-import per from './images/DriverPhotos/Per.png';
-import rus from './images/DriverPhotos/Rus.png';
-import sai from './images/DriverPhotos/Sai.png';
-import str from './images/DriverPhotos/Str.png';
-import tsu from './images/DriverPhotos/Tsu.png';
+import ver from './images/DriverPhotos/Ver.jpg';
+import alb from './images/DriverPhotos/Alb.jpg';
+import alo from './images/DriverPhotos/Alo.jpg';
+import bot from './images/DriverPhotos/Bot.jpg';
+import gas from './images/DriverPhotos/Gas.jpg';
+import gua from './images/DriverPhotos/Gua.jpg';
+import ham from './images/DriverPhotos/Ham.jpg';
+import lec from './images/DriverPhotos/Lec.jpg';
+import mag from './images/DriverPhotos/Mag.jpg';
+import nor from './images/DriverPhotos/Nor.jpg';
+import oco from './images/DriverPhotos/Oco.jpg';
+import per from './images/DriverPhotos/Per.jpg';
+import rus from './images/DriverPhotos/Rus.jpg';
+import sai from './images/DriverPhotos/Sai.jpg';
+import str from './images/DriverPhotos/Str.jpg';
+import tsu from './images/DriverPhotos/Tsu.jpg';
 import './DriversPage.css';
 
 const DriversPage = () => {

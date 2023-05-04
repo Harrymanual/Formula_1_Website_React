@@ -53,7 +53,7 @@ const DriversPage = () => {
       }}
     >
       {images.map((image, index) => (
-        <button key={index} onClick={() => navigate(image.path)} style={{ backgroundColor: 'rgb(100, 118, 146)' }}>
+        <button key={index} onClick={() => navigate(image.path)} style={{ backgroundColor: 'white' }}>
           <img
             src={image.src}
             alt={image.alt}

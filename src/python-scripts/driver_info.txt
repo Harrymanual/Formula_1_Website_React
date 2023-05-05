@@ -1,0 +1,176 @@
+Name: Max Verstappen
+Team: Red Bull Racing
+Country: Netherlands
+Podiums: 81
+Points: 2104.5
+Grands Prix entered: 167
+World Championships: 2
+Highest race finish: 1 (x37)
+Highest grid position: 1
+Date of birth: 30/09/1997
+Place of birth: Hasselt, Belgium
+Name: Sergio Perez
+Team: Red Bull Racing
+Country: Mexico
+Podiums: 29
+Points: 1288
+Grands Prix entered: 240
+World Championships: N/A
+Highest race finish: 1 (x6)
+Highest grid position: 1
+Date of birth: 26/01/1990
+Place of birth: Guadalajara, Mexico
+Name: Lewis Hamilton
+Team: Mercedes
+Country: United Kingdom
+Podiums: 192
+Points: 4453.5
+Grands Prix entered: 314
+World Championships: 7
+Highest race finish: 1 (x103)
+Highest grid position: 1
+Date of birth: 07/01/1985
+Place of birth: Stevenage, England
+Name: George Russell
+Team: Mercedes
+Country: United Kingdom
+Podiums: 9
+Points: 322
+Grands Prix entered: 86
+World Championships: N/A
+Highest race finish: 1 (x1)
+Highest grid position: 1
+Date of birth: 15/02/1998
+Place of birth: King's Lynn, England
+Name: Charles Leclerc
+Team: Ferrari
+Country: Monaco
+Podiums: 25
+Points: 896
+Grands Prix entered: 107
+World Championships: N/A
+Highest race finish: 1 (x5)
+Highest grid position: 1
+Date of birth: 16/10/1997
+Place of birth: Monte Carlo, Monaco
+Name: Carlos Sainz
+Team: Ferrari
+Country: Spain
+Podiums: 15
+Points: 816.5
+Grands Prix entered: 167
+World Championships: N/A
+Highest race finish: 1 (x1)
+Highest grid position: 1
+Date of birth: 01/09/1994
+Place of birth: Madrid, Spain
+Name: Yuki Tsunoda
+Team: AlphaTauri
+Country: Japan
+Podiums: N/A
+Points: 46
+Grands Prix entered: 48
+World Championships: N/A
+Highest race finish: 4 (x1)
+Highest grid position: 7
+Date of birth: 11/05/2000
+Place of birth: Sagamihara, Japan
+Name: Fernando Alonso
+Team: Aston Martin
+Country: Spain
+Podiums: 101
+Points: 2121
+Grands Prix entered: 362
+World Championships: 2
+Highest race finish: 1 (x32)
+Highest grid position: 1
+Date of birth: 29/07/1981
+Place of birth: Oviedo, Spain
+Name: Lance Stroll
+Team: Aston Martin
+Country: Canada
+Podiums: 3
+Points: 221
+Grands Prix entered: 126
+World Championships: N/A
+Highest race finish: 3 (x3)
+Highest grid position: 1
+Date of birth: 29/10/1998
+Place of birth: Montreal, Canada
+Name: Esteban Ocon
+Team: Alpine
+Country: France
+Podiums: 2
+Points: 368
+Grands Prix entered: 115
+World Championships: N/A
+Highest race finish: 1 (x1)
+Highest grid position: 3
+Date of birth: 17/09/1996
+Place of birth: �vreux, Normandy
+Name: Pierre Gasly
+Team: Alpine
+Country: France
+Podiums: 3
+Points: 336
+Grands Prix entered: 112
+World Championships: N/A
+Highest race finish: 1 (x1)
+Highest grid position: 2
+Date of birth: 07/02/1996
+Place of birth: Rouen, France
+Name: Alexander Albon
+Team: Williams
+Country: Thailand
+Podiums: 2
+Points: 202
+Grands Prix entered: 63
+World Championships: N/A
+Highest race finish: 3 (x2)
+Highest grid position: 4
+Date of birth: 23/03/1996
+Place of birth: London, England
+Name: Valtteri Bottas
+Team: Alfa Romeo
+Country: Finland
+Podiums: 67
+Points: 1791
+Grands Prix entered: 204
+World Championships: N/A
+Highest race finish: 1 (x10)
+Highest grid position: 1
+Date of birth: 28/08/1989
+Place of birth: Nastola, Finland
+Name: Zhou Guanyu
+Team: Alfa Romeo
+Country: China
+Podiums: N/A
+Points: 8
+Grands Prix entered: 26
+World Championships: N/A
+Highest race finish: 8 (x1)
+Highest grid position: 9
+Date of birth: 30/05/1999
+Place of birth: Shanghai, China
+Name: Kevin Magnussen
+Team: Haas F1 Team
+Country: Denmark
+Podiums: 1
+Points: 184
+Grands Prix entered: 146
+World Championships: N/A
+Highest race finish: 2 (x1)
+Highest grid position: 4
+Date of birth: 05/10/1992
+Place of birth: Roskilde, Denmark
+Name: Lando Norris
+Team: McLaren
+Country: United Kingdom
+Podiums: 6
+Points: 438
+Grands Prix entered: 86
+World Championships: N/A
+Highest race finish: 2 (x1)
+Highest grid position: 1
+Date of birth: 13/11/1999
+Place of birth: Bristol, England

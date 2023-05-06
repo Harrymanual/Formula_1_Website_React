@@ -5,23 +5,41 @@ import teamsImage from './images/Teams.png';
 import driversImage from './images/Drivers.png';
 
 const Homepage = () => {
-  const [isLeftHovered, setIsLeftHovered] = useState(false);
-  const [isRightHovered, setIsRightHovered] = useState(false);
+  const [isTeamsHovered, setisTeamsHovered] = useState(false);
+  const [isDriversHovered, setisDriversHovered] = useState(false);
+  const [isTeamsClicked, setisTeamsClicked] = useState(false);
+  const [isDriversClicked, setisDriversClicked] = useState(false);
   const navigate = useNavigate();
 
-  const handleLeftHover = () => {
-    setIsLeftHovered(true);
-    setIsRightHovered(false);
+  const handleTeamsHover = () => {
+    setisTeamsHovered(true);
+    setisDriversHovered(false);
   };
 
-  const handleRightHover = () => {
-    setIsLeftHovered(false);
-    setIsRightHovered(true);
+  const handleDriversHover = () => {
+    setisTeamsHovered(false);
+    setisDriversHovered(true);
   };
 
   const handleHoverExit = () => {
-    setIsLeftHovered(false);
-    setIsRightHovered(false);
+    setisTeamsHovered(false);
+    setisDriversHovered(false);
+  };
+
+  const handleTeamsClick = () => {
+    setisTeamsClicked(true);
+    setisDriversClicked(false);
+    setTimeout(() => {
+      navigate('/teams');
+    }, 1500); 
+  };
+
+  const handleDriversClick = () => {
+    setisTeamsClicked(false);
+    setisDriversClicked(true);
+    setTimeout(() => {
+      navigate('/drivers');
+    }, 1500); //duration
   };
 
   return (
@@ -44,15 +62,16 @@ const Homepage = () => {
           justifyContent: 'center',
           alignItems: 'center',
           cursor: 'pointer',
-          backgroundColor: isLeftHovered ? 'rgba(211, 211, 211, 0.1)' : 'transparent',
+          backgroundColor: isTeamsHovered ? 'rgba(211, 211, 211, 0.1)' : 'transparent',
           height: '100vh',
+          transition: 'transform 1.5s', // add transition property
+          transform: isTeamsClicked ? 'translateX(100vw)' : 'none', // add transform property
+          display: isDriversClicked ? 'none' : 'absolute', // hide the drivers button when the teams button is clicked
+          maxWidth: '50%',
         }}
-        onMouseEnter={handleLeftHover}
+        onMouseEnter={handleTeamsHover}
         onMouseLeave={handleHoverExit}
-        onClick={() => {
-          console.log('Teams button clicked');
-          navigate('/teams')
-        }}
+        onClick={handleTeamsClick} // call handleTeamsClick function
       >  
         <img
           src={teamsImage}
@@ -68,15 +87,16 @@ const Homepage = () => {
           justifyContent: 'center',
           alignItems: 'center',
           cursor: 'pointer',
-          backgroundColor: isRightHovered ? 'rgba(211, 211, 211, 0.1)' : 'transparent',
+          backgroundColor: isDriversHovered ? 'rgba(211, 211, 211, 0.1)' : 'transparent',
           height: '100vh',
+          transition: 'transform 1.5s', // add transition property
+          transform: isDriversClicked ? 'translateX(-100vw)' : 'none', // add transform property
+          display: isTeamsClicked ? 'none' : 'absolute', // hide the teams button when the teams button is clicked
+          maxWidth: '50%',
         }}
-        onMouseEnter={handleRightHover}
+        onMouseEnter={handleDriversHover}
         onMouseLeave={handleHoverExit}
-        onClick={() => {
-          console.log('Drivers button clicked');
-          navigate('/drivers')
-        }}
+        onClick={handleDriversClick} // call handleTeamsClick function
       >
         <img
           src={driversImage}

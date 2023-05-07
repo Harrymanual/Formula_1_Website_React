@@ -3,6 +3,8 @@ import backgroundImage from './images/f1_logo.jpg';
 import { useNavigate } from 'react-router-dom';
 import teamsImage from './images/Teams.png';
 import driversImage from './images/Drivers.png';
+import teamsAnimation from './images/TeamsAnimation.png';
+import driversAnimation from './images/DriversAnimation.png';
 
 const Homepage = () => {
   const [isTeamsHovered, setisTeamsHovered] = useState(false);
@@ -74,7 +76,7 @@ const Homepage = () => {
         onClick={handleTeamsClick} // call handleTeamsClick function
       >  
         <img
-          src={teamsImage}
+          src={isTeamsClicked ? teamsAnimation : teamsImage}
           alt="Teams"
           style={{ width: '80%', height: '80%', cursor: 'pointer', marginTop: '250px' }}
         />
@@ -99,7 +101,7 @@ const Homepage = () => {
         onClick={handleDriversClick} // call handleTeamsClick function
       >
         <img
-          src={driversImage}
+          src={isDriversClicked ? driversAnimation : driversImage}
           alt="Drivers"
           style={{ width: '80%', height: '80%',  cursor: 'pointer', marginTop: '250px' }}
         />

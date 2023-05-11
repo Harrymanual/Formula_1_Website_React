@@ -1,14 +1,22 @@
-const TeamPageTemplate = ({ teamName, imageSrc, description }) => {
-    return (
-      <div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src={imageSrc} alt={teamName} style={{ width: '100px', height: '100px', marginRight: '10px' }} />
-          <h1>{teamName}</h1>
-        </div>
-        <p>{description}</p>
-        {/* the rest of the content */}
+import React from 'react';
+import './TeamPageTemplate.css';
+
+const TeamPageTemplate = ({ teamName, imageSrc, infoList }) => {
+  return (
+    <div className="team-page">
+      <img src={imageSrc} alt={teamName} className="team-image" />
+      <div className="team-info">
+        <h1>{teamName}</h1>
+        <ul>
+          {infoList.map((info, index) => (
+            <li key={index}>
+              <pre>{info}</pre>
+            </li>
+          ))}
+        </ul>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
 export default TeamPageTemplate;

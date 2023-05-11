@@ -1,7 +1,7 @@
 Full Team Name: Oracle Red Bull Racing
 Base: Milton Keynes, United Kingdom
 Team Chief: Christian Horner
-Technical Chief: Pierre Wach�
+Technical Chief: Pierre Wache
 Chassis: RB19
 Power Unit: Honda RBPT
 First Team Entry: 1997
@@ -66,7 +66,7 @@ Pole Positions: 1
 Fastest Laps: 2
 Full Team Name: Scuderia Ferrari
 Base: Maranello, Italy
-Team Chief: Fr�d�ric Vasseur
+Team Chief: Frederic Vasseur
 Technical Chief: Enrico Cardile / Enrico Gualtieri
 Chassis: SF-23
 Power Unit: Ferrari

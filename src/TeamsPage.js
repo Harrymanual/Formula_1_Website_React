@@ -32,8 +32,6 @@ const TeamsPage = () => {
       style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', // adjust the minimum width here
-        //gridTemplateColumns: 'repeat(5, minmax(0, 1fr))',
-        //gridAutoRows: '510px',
         gap: '10px',
         minHeight: '100vh',
         boxSizing: 'border-box',

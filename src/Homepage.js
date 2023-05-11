@@ -11,6 +11,7 @@ const Homepage = () => {
   const [isDriversHovered, setisDriversHovered] = useState(false);
   const [isTeamsClicked, setisTeamsClicked] = useState(false);
   const [isDriversClicked, setisDriversClicked] = useState(false);
+  
   const navigate = useNavigate();
 
   const handleTeamsHover = () => {
@@ -33,7 +34,7 @@ const Homepage = () => {
     setisDriversClicked(false);
     setTimeout(() => {
       navigate('/teams');
-    }, 1500); 
+    }, 1000); 
   };
 
   const handleDriversClick = () => {
@@ -41,7 +42,7 @@ const Homepage = () => {
     setisDriversClicked(true);
     setTimeout(() => {
       navigate('/drivers');
-    }, 1500); //duration
+    }, 1000); //duration
   };
 
   return (
@@ -67,7 +68,7 @@ const Homepage = () => {
           backgroundColor: isTeamsHovered ? 'rgba(211, 211, 211, 0.1)' : 'transparent',
           height: '100vh',
           transition: 'transform 1.5s', // add transition property
-          transform: isTeamsClicked ? 'translateX(100vw)' : 'none', // add transform property
+          transform: isTeamsClicked ? 'translateX(40vw)' : 'none', // add transform property
           display: isDriversClicked ? 'none' : 'absolute', // hide the drivers button when the teams button is clicked
           maxWidth: '50%',
         }}
@@ -92,7 +93,7 @@ const Homepage = () => {
           backgroundColor: isDriversHovered ? 'rgba(211, 211, 211, 0.1)' : 'transparent',
           height: '100vh',
           transition: 'transform 1.5s', // add transition property
-          transform: isDriversClicked ? 'translateX(-100vw)' : 'none', // add transform property
+          transform: isDriversClicked ? 'translateX(-40vw)' : 'none', // add transform property
           display: isTeamsClicked ? 'none' : 'absolute', // hide the teams button when the teams button is clicked
           maxWidth: '50%',
         }}

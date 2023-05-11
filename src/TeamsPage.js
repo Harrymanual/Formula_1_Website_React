@@ -21,7 +21,7 @@ const TeamsPage = () => {
     { src: aston, alt: "aston #whyisstrollinthatrocket", path: "/teams/aston-martin" },
     { src: renault, alt: "alpine #akabeerbudgetchampagne", path: "/teams/alpine" },
     { src: alpha, alt: "alpha tauri #bteam", path: "/teams/alpha-tauri" },
-    { src: alfa, alt: "audi", path: "/teams/audi" },
+    { src: alfa, alt: "alfa romeo", path: "/teams/alfa-romeo" },
     { src: williams, alt: "williams", path: "/teams/williams" },
     { src: mchonda, alt: "mchonda", path: "/teams/mclaren" },
     { src: haas, alt: "?", path: "/teams/haas" },

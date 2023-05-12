@@ -79,7 +79,7 @@ const Homepage = () => {
         <img
           src={isTeamsClicked ? teamsAnimation : teamsImage}
           alt="Teams"
-          style={{ width: '80%', height: '80%', cursor: 'pointer', marginTop: '250px' }}
+          style={{ width: '80%', height: '80%', cursor: 'pointer', marginTop: '20%'}}
         />
       </div>
 
@@ -104,7 +104,7 @@ const Homepage = () => {
         <img
           src={isDriversClicked ? driversAnimation : driversImage}
           alt="Drivers"
-          style={{ width: '80%', height: '80%',  cursor: 'pointer', marginTop: '250px' }}
+          style={{ width: '80%', height: '80%',  cursor: 'pointer', marginTop: '20%'}}
         />
       </div>
     </div>

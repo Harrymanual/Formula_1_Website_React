@@ -1,0 +1,21 @@
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline; /* Add underline */
+    text-decoration-color: inherit; /* Set underline color to be the same as text color */
+    transition: color 0.5s; /* Add transition effect */
+}
+  
+.about-letter {
+    color: inherit; /* inherit color from parent .about-button */
+    transition: color 0.5s;
+}
+    

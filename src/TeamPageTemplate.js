@@ -11,8 +11,8 @@ const TeamPageTemplate = ({ teamName, imageSrc, infoList, secondImageSrc, backgr
     backgroundImage: `url(${background})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top right',
-    backgroundSize: 'cover',
-    height: '100vh',
+    backgroundSize: '100% 100%', // Set background size to 100% 100%
+    height: '100%',
     position: 'relative',
     zIndex: '1',
   };
@@ -21,8 +21,8 @@ const TeamPageTemplate = ({ teamName, imageSrc, infoList, secondImageSrc, backgr
     backgroundImage: `url(${secondImageSrc})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'bottom',
-    backgroundSize: 'cover',
-    height: '70vh',
+    backgroundSize: '100% 100%', // Set background size to 100% 100%
+    height: '70%',
     position: 'relative',
     zIndex: '1',
   };

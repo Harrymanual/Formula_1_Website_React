@@ -15,4 +15,5 @@
 .home-button a {
   color: inherit; /* Inherit color from parent .home-button */
   text-decoration: none;
+  transition: color 0.5s;
 }

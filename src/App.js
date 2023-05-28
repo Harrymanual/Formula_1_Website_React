@@ -6,6 +6,7 @@ import TeamsPage from './TeamsPage';
 
 import AboutButton from './AboutButton';
 import AboutPage from './AboutPage';
+import HomeButton from './HomeButton'
 
 //teams
 import RedBullPage  from './RedBullPage';
@@ -21,30 +22,6 @@ import AlphaPage from './AlphaPage';
 
 import './homebutton.css'
 import './appStyle.css'
-
-//fix this later
-
-const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF']; // Colors of the rainbow
-
-const HomeButton = () => {
-  const [colorIndex, setColorIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setColorIndex((colorIndex + 1) % colors.length);
-    }, 500);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [colorIndex]);
-
-  return (
-    <Link to="/" className="home-button" style={{ color: colors[colorIndex] }}>
-      Home
-    </Link>
-  );
-};
 
 
 const App = () => {

@@ -24,7 +24,7 @@ const AboutButton = () => {
     setTimeout(() => {
       setActive(false);
       window.location.href = '/about';
-    }, 1000); 
+    }, 500); 
   };
 
   const text = "About";

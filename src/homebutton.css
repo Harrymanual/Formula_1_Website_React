@@ -9,11 +9,16 @@
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
+  text-decoration-color: inherit; /* Set underline color to be the same as text color */
   transition: color 0.5s; /* Add transition effect */
+  text-decoration: none;
 }
 
-.home-button a {
+.home-letter {
   color: inherit; /* Inherit color from parent .home-button */
-  text-decoration: none;
   transition: color 0.5s;
+}
+
+.home-button.active {
+
 }

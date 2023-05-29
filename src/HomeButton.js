@@ -5,6 +5,7 @@ import './homebutton.css';
 const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF']; 
 
 const HomeButton = () => {
+  const [active, setActive] = useState(false);
   const [colorIndex, setColorIndex] = useState(0);
 
   useEffect(() => {
@@ -17,12 +18,27 @@ const HomeButton = () => {
     };
   }, [colorIndex]);
 
+  const handleClick = (event) => {
+    event.preventDefault();
+    setActive(true);
+    setTimeout(() => {
+      setActive(false);
+      window.location.href = '/';
+    }, 500); 
+  };
+
+  const text = "Home";
   return (
-    <div className="home-button">
-      <Link to="/" style={{ color: colors[colorIndex] }}>
-        Home
-      </Link>
-    </div>
+    <Link 
+      to="/" 
+      className={`home-button ${active ? 'active' : ''}`} 
+      onClick={handleClick} 
+      style={{ color: colors[colorIndex] }}
+    >
+      {[...text].map((char, idx) => 
+        <span key={idx} className="home-letter">{char}</span>
+      )}
+    </Link>
   );
 };
 

@@ -3,15 +3,16 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    width: 100px;
-    height: 40px;
+    width: 3.90625vw;
+    height: 2.77778vh;
     border: 2px solid black;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 0.78125vw;
     font-weight: bold;
     text-decoration-color: inherit; /* Set underline color to be the same as text color */
     transition: color 0.5s; /* Add transition effect */
     text-decoration: none;
+    position: relative;
 }
   
 .about-letter {

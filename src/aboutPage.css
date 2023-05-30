@@ -4,10 +4,12 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 3;
   }
   
   .slide-arrow-left {
     left: 0;
+    z-index: 10;
   }
   
   .slide-arrow-right {

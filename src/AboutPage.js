@@ -20,6 +20,30 @@ const slides = [
   </div>
 ];
 
+const gradients = [
+  // Define gradients for each slide
+  <linearGradient id="gradient1">
+    <stop offset="0%" stopColor="red" />
+    <stop offset="100%" stopColor="yellow" />
+  </linearGradient>,
+  <linearGradient id="gradient2">
+    <stop offset="0%" stopColor="yellow" />
+    <stop offset="100%" stopColor="blue" />
+  </linearGradient>,
+  <linearGradient id="gradient3">
+    <stop offset="0%" stopColor="blue" />
+    <stop offset="100%" stopColor="purple" />
+  </linearGradient>,
+];
+
+// SVG paths using viewport coordinates
+const paths = [
+  'M0,50 Q50,0 100,50 T200,50 T300,50 T400,50 T500,50', // SVG path for slide 1
+  'M0,50 Q50,100 100,50 T200,50 T300,50 T400,50 T500,50', // SVG path for slide 2
+  'M0,50 Q50,0 100,50 T200,50 T300,50 T400,50 T500,50', // SVG path for slide 3
+];
+
+
 const AboutPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -38,11 +62,35 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <div className="slide">
-        {currentSlide > 0 && (
+      {currentSlide > 0 && (
           <img src={leftArrow} alt="previous" onClick={handlePrev} className="slide-arrow slide-arrow-left" />
         )}
         
-        <div className="slide-content">{slides[currentSlide]}</div>
+        <div className="slide-content">
+          {slides[currentSlide]}
+          <svg width="100%" height="500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100">
+            <defs>
+              <linearGradient id="gradient1">
+                <stop offset="0%" stopColor="red" />
+                <stop offset="100%" stopColor="yellow" />
+              </linearGradient>
+              <linearGradient id="gradient2">
+                <stop offset="0%" stopColor="yellow" />
+                <stop offset="100%" stopColor="blue" />
+              </linearGradient>
+              <linearGradient id="gradient3">
+                <stop offset="0%" stopColor="blue" />
+                <stop offset="100%" stopColor="purple" />
+              </linearGradient>
+            </defs>
+            <path 
+              d={paths[currentSlide]} 
+              stroke={`url(#gradient${currentSlide + 1})`} 
+              fill="transparent" 
+              strokeWidth="2" 
+            />
+          </svg>
+        </div>
         
         {currentSlide < slides.length - 1 && (
           <img src={rightArrow} alt="next" onClick={handleNext} className="slide-arrow slide-arrow-right" />

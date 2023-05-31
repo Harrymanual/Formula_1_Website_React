@@ -1,11 +1,26 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+
 body {
     background-color: rgb(85, 85, 85);
   }
 
-  .buttons-container {
-    display: flex;
-    justify-content: center;
-    position: relative; 
-    width: 100%;
-    margin-top: 20px; 
-  }
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  position: relative; 
+  width: 100%;
+  margin-top: auto; 
+  margin-bottom: 20px;
+}

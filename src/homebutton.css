@@ -12,7 +12,6 @@
   text-decoration-color: inherit; /* Set underline color to be the same as text color */
   transition: color 0.5s; /* Add transition effect */
   text-decoration: none;
-  position: relative;
 }
 
 .home-letter {
@@ -21,5 +20,4 @@
 }
 
 .home-button.active {
-
 }

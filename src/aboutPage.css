@@ -43,3 +43,44 @@
 .notch.active {
   background: green;
 }
+
+.popup-container {
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  width: 40%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.popup-box {
+  width: 80%;
+  height: 80%;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.circle-text {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.circle-text:hover {
+  text-decoration: underline;
+}
+
+.circle-text text {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  fill: white;
+}
+
+.circle-text circle {
+  stroke: black;
+  fill: white;
+}

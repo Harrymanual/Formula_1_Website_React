@@ -44,9 +44,9 @@ const paths = [
 
 // Positions of the circles. Each inner array represents a slide, with 5 circles each.
 const circlePositions = [
-  [{x: "50", y: "0"}, {x: "100", y: "50"}, {x: "200", y: "50"}, {x: "300", y: "50"}, {x: "400", y: "50"}],
-  [{x: "50", y: "100"}, {x: "100", y: "50"}, {x: "200", y: "50"}, {x: "300", y: "50"}, {x: "400", y: "50"}],
-  [{x: "50", y: "0"}, {x: "100", y: "50"}, {x: "200", y: "50"}, {x: "300", y: "50"}, {x: "400", y: "50"}]
+  [{x: "50", y: "25"}, {x: "150", y: "75"}, {x: "250", y: "25"}, {x: "350", y: "75"}, {x: "450", y: "25"}],
+  [{x: "50", y: "75"}, {x: "150", y: "25"}, {x: "250", y: "75"}, {x: "350", y: "25"}, {x: "450", y: "75"}],
+  [{x: "50", y: "25"}, {x: "150", y: "75"}, {x: "250", y: "25"}, {x: "350", y: "75"}, {x: "450", y: "25"}]
 ];
 
 // Texts to display inside each circle for each slide.
@@ -90,19 +90,39 @@ const AboutPage = () => {
     setModalVisible(false);
   };
 
+
+  const Arrow = ({ direction, handleClick, glyph }) => (
+    <div
+      className={ `slide-arrow slide-arrow-${direction}` }
+      onClick={ handleClick }>
+      <img src={glyph} alt={`${direction} Slide Arrow`} />
+      <div className='arrow-overlay'></div>
+    </div>
+  );
+
   return (
     <div className="about-page">
       <div className="slide">
         {currentSlide > 0 && (
-          <img src={leftArrow} alt="previous" onClick={handlePrev} className="slide-arrow slide-arrow-left" />
+          <Arrow 
+            direction='left' 
+            handleClick={ handlePrev } 
+            glyph={ leftArrow }
+          />
         )}
         
         <div className="slide-content">
           {slides[currentSlide]}
-          <svg width="100%" height="500" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 500 100">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 500 100">
             <defs>
               {gradients[currentSlide]}
             </defs>
+            <path 
+              d={paths[currentSlide]} 
+              stroke={`url(#gradient${currentSlide + 1})`} 
+              fill="transparent" 
+              strokeWidth="7" 
+            />
             {circlePositions[currentSlide].map((circle, index) => (
               <a key={index} onClick={() => handleCircleClick(modalTexts[currentSlide][index])} className="circle-text">
                 <circle
@@ -122,12 +142,6 @@ const AboutPage = () => {
                 </text>
               </a>
             ))}
-            <path 
-              d={paths[currentSlide]} 
-              stroke={`url(#gradient${currentSlide + 1})`} 
-              fill="transparent" 
-              strokeWidth="7" 
-            />
           </svg>
         </div>
   
@@ -138,14 +152,20 @@ const AboutPage = () => {
         </div>
         
         {currentSlide < slides.length - 1 && (
-          <img src={rightArrow} alt="next" onClick={handleNext} className="slide-arrow slide-arrow-right" />
+          <Arrow 
+            direction='right' 
+            handleClick={ handleNext } 
+            glyph={ rightArrow }
+          />
         )}
       </div>
       {modalVisible && (
       <div className="popup-container">
-        <div className="popup-box">
+       <div className="popup-box">
+          <div className="popup-text">
+            <p>{modalText}</p>
+          </div>
           <button onClick={handleModalClose}>Close</button>
-          <p>{modalText}</p>
         </div>
       </div>
     )}

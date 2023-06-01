@@ -1,19 +1,42 @@
 .slide-arrow {
-    width: 4%; /* Adjust to desired size */
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 2;
-  }
-  
-  .slide-arrow-left {
-    left: 0;
-  }
-  
-  .slide-arrow-right {
-    right: 0;
-  }
+  width: 4%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.slide-arrow img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide-arrow .arrow-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.slide-arrow:hover .arrow-overlay {
+  opacity: 1;
+}
+
+.slide-arrow-left {
+  left: 0;
+}
+
+.slide-arrow-right {
+  right: 0;
+}
+
 
 .about-page {
   display: flex;
@@ -53,15 +76,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.0000000000000000001%;
 }
 
 .popup-box {
   width: 80%;
   height: 80%;
   background: #fff;
-  padding: 20px;
+  padding: 5%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-box button {
+  align-self: center;
+  margin-top: auto;
+}
+
+.popup-text {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  text-align: center;
 }
 
 .circle-text {
@@ -76,8 +117,8 @@
 
 .circle-text text {
   font-family: Arial, sans-serif;
-  font-size: 1em;
-  fill: white;
+  font-size: 30%;
+  fill: black;
 }
 
 .circle-text circle {

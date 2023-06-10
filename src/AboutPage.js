@@ -1,24 +1,12 @@
 import React, { useState } from 'react';
 import leftArrow from './images/leftArrow.png';
 import rightArrow from './images/rightArrow.png';
+
+import slides from './Slides/slides';  // import slides
+import modalTexts from './Slides/modalText';  // import modal texts
+
 import './aboutPage.css';
 
-const slides = [
-  <div>
-    <h1>This is slide 1 content</h1>
-    <p>Firstly, this website is designed mainly with a computer in mind, not a phone. It still works however I am not using any css frameworks and computers are therefore getting priority.</p>
-  </div>,
-  
-  <div>
-    <h1>This is slide 2 content</h1>
-    <p>Some more content for slide 2.</p>
-  </div>,
-  
-  <div>
-    <h1>This is slide 3 content</h1>
-    <p>Some more content for slide 3.</p>
-  </div>
-];
 
 const gradients = [
   // Define gradients for each slide
@@ -51,16 +39,9 @@ const circlePositions = [
 
 // Texts to display inside each circle for each slide.
 const circleTexts = [
-  ['Text 1', 'Text 2', 'Text 3', 'Text 4', 'Text 5'],
-  ['Text 6', 'Text 7', 'Text 8', 'Text 9', 'Text 10'],
+  ['Why?', 'Home Page', 'Team Page', 'Individual Teams', 'Drivers Page'],
+  ['About Page', 'Git', 'Individual Drivers', 'Text 9', 'Text 10'],
   ['Text 11', 'Text 12', 'Text 13', 'Text 14', 'Text 15'],
-];
-
-// Texts to display in the modal when each circle is clicked.
-const modalTexts = [
-  ['Modal text 1', 'Modal text 2', 'Modal text 3', 'Modal text 4', 'Modal text 5'],
-  ['Modal text 6', 'Modal text 7', 'Modal text 8', 'Modal text 9', 'Modal text 10'],
-  ['Modal text 11', 'Modal text 12', 'Modal text 13', 'Modal text 14', 'Modal text 15'],
 ];
 
 const AboutPage = () => {
@@ -128,8 +109,9 @@ const AboutPage = () => {
                 <circle
                   cx={circle.x}
                   cy={circle.y}
-                  r="10"
+                  r="20"
                   fill="green"
+                  className="circle" 
                 />
                 <text
                   x={circle.x}
@@ -161,10 +143,11 @@ const AboutPage = () => {
       </div>
       {modalVisible && (
       <div className="popup-container">
-       <div className="popup-box">
-          <div className="popup-text">
-            <p>{modalText}</p>
-          </div>
+        <div className="popup-box">
+          <div 
+            className="popup-text"
+            dangerouslySetInnerHTML={{ __html: modalText.replace(/\n/g, '<br />') }}
+          />
           <button onClick={handleModalClose}>Close</button>
         </div>
       </div>

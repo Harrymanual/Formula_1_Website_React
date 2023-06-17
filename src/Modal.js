@@ -7,8 +7,9 @@ const Modal = ({ handleClose, show }) => {
   return (
     <div className={showHideClassName}>
       <section className="modal-main">
-        <p>Designed for computers, not phones for now, ust trying to get content finished before worrying about polishing.</p>
-        <button className="close-button" onClick={handleClose}>X</button>
+        <p>Designed for computers, not phones for now, just trying to get content finished before worrying about polishing.</p>
+        <p>Thank you for your patience :).</p>
+        <button className="close-button" onClick={handleClose}>Close</button>
       </section>
     </div>
   );

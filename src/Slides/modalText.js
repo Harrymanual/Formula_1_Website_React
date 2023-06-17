@@ -3,7 +3,7 @@ const modalTexts = [
 
     Indeed, the road is challenging. Web development is a complex domain, riddled with a myriad of problems that demand intricate solutions. However, the heart of this challenge also lies its appeal. It presents an opportunity not just to extend my knowledge of Formula 1, but to explore the intricacies of React, the nuances of Git, and the vast world of programming. The hurdles I face are high, but each one I overcome brings a sense of accomplishment and a deeper understanding of my craft.
 
-    This project, hence, is more than just an ambitious endeavor; it's a journey of personal growth and discovery. Through the arduous coding sessions and bouts of problem-solving, I'm not just building a website - I am building resilience, fortifying my skills, and creating something that resonates with my passion. I am weaving my love for Formula 1 with the craft of web development, translating my admiration for the sport into a digital experience. And that, in essence, is why I'm doing this - to blend passion with profession, to learn, to grow, and to create something I am truly proud of.`, 
+    I really like coding and I really like Formula 1 and I want to combine the two, that's why.`, 
     
     `beans
     

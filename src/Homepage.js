@@ -5,12 +5,15 @@ import teamsImage from './images/Teams.png';
 import driversImage from './images/Drivers.png';
 import teamsAnimation from './images/TeamsAnimation.png';
 import driversAnimation from './images/DriversAnimation.png';
+import Modal from './Modal';
 
 const Homepage = () => {
   const [isTeamsHovered, setisTeamsHovered] = useState(false);
   const [isDriversHovered, setisDriversHovered] = useState(false);
   const [isTeamsClicked, setisTeamsClicked] = useState(false);
   const [isDriversClicked, setisDriversClicked] = useState(false);
+  const [show, setShow] = useState(true);
+  const handleClose = () => setShow(false);
   
   const navigate = useNavigate();
 
@@ -58,6 +61,7 @@ const Homepage = () => {
         border: 'none',
       }}
     >
+      <Modal show={show} handleClose={handleClose} />
       <div
         style={{
           flex: 1,

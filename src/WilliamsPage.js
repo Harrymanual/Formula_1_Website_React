@@ -19,7 +19,7 @@ const WilliamsPage = () => {
 
   return (
     <TeamPageTemplate
-      teamName="Williams aka team Albon"
+      teamName="Williams"
       imageSrc={williamsLogo}
       infoList={infoList}
       secondImageSrc={stock}

@@ -34,7 +34,7 @@ const DriversPage = () => {
     { src: gas, alt: "gasly", path: "/drivers/gasly" },
     { src: alb, alt: "albon", path: "/drivers/albon" },
     { src: bot, alt: "bottas", path: "/drivers/bottas" },
-    { src: gua, alt: "guanyou", path: "/drivers/guanyou" },
+    { src: gua, alt: "guanyou", path: "/drivers/guanyu" },
     { src: mag, alt: "magnussen", path: "/drivers/magnussen" },
     { src: nor, alt: "norris", path: "/drivers/norris" },
   ];

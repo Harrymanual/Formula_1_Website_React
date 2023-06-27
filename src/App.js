@@ -20,6 +20,8 @@ import McLarenPage from './McLarenPage';
 import AlfaPage from './AlfaPage';
 import AlphaPage from './AlphaPage';
 
+import VerstappenPage from './VerstappenPage';
+
 import './homebutton.css'
 import './appStyle.css'
 
@@ -43,6 +45,8 @@ const App = () => {
         <Route path="/teams/alpha-tauri" element={<AlphaPage />} />
         <Route path="/teams/ferrari" element={<FerrariPage />} />
         <Route path="/teams/mclaren" element={<McLarenPage />} />
+
+        <Route path="/drivers/verstappen" element={<VerstappenPage />} />
         
       </Routes>
       <div className="buttons-container">

@@ -42,11 +42,11 @@ const DriverPageTemplate = ({ driverName, imageSrc, infoList, background }) => {
 
   return (
     <>
-      <div className="driver-page" style={backgroundStyle}>
+      <div className="driver-page1" style={backgroundStyle}>
         <h1 className="driver-name" style={driverNameStyle}>
           {driverName}
         </h1>
-        <img src={imageSrc} alt={driverName} className="driver-image" style={imgStyle} />
+        <img src={imageSrc} alt={driverName} className="driver-image1" style={imgStyle} />
         <div className="driver-info" style={infoListStyle}>
           <ul>
             {infoList.map((info, index) => (

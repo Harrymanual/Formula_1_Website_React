@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import DriverPageTemplate from './DriverPageTemplate';
-import redBullLogo from './images/DriverPhotos/Ver.jpg';
+import redBullLogo from './images/DriverPhotos/Per.jpg';
 import background from './images/f1_logo.jpg';
 
-const VerstappenPage = () => {
+const PerezPage = () => {
   const [infoList, setInfoList] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const VerstappenPage = () => {
 
   return (
     <DriverPageTemplate
-      driverName="Max Verstappen"
+      driverName="Sergio Perez"
       imageSrc={redBullLogo}
       infoList={infoList}
       background = {background}
@@ -26,4 +26,4 @@ const VerstappenPage = () => {
   );
 };
 
-export default VerstappenPage;
+export default PerezPage;

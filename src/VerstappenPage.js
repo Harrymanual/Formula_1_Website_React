@@ -18,7 +18,7 @@ const VerstappenPage = () => {
 
   return (
     <DriverPageTemplate
-      teamName="Verstappen"
+      driverName="Max Verstappen"
       imageSrc={redBullLogo}
       infoList={infoList}
       background = {background}

@@ -15,7 +15,7 @@ import NorrisImg from './images/DriverPhotos/Nor.jpg';
 import background from './images/f1_logo.jpg';
 
 
-const CreateDriverPage = (driverName, driverImage) => {
+const CreateDriverPage = (driverName, driverImage, startNum, endNum) => {
   return () => {
     const [infoList, setInfoList] = useState([]);
   
@@ -23,7 +23,7 @@ const CreateDriverPage = (driverName, driverImage) => {
       fetch('/driver_info.txt')
         .then(response => response.text())
         .then(text => {
-          const lines = text.split('\n').slice(0, 11);
+          const lines = text.split('\n').slice(startNum, endNum);
           setInfoList(lines);
         })
         .catch(error => console.error(error));
@@ -40,13 +40,13 @@ const CreateDriverPage = (driverName, driverImage) => {
   };
 };
 
-export const TsunodaPage = CreateDriverPage("Yuki Tsunoda", TsunodaImg);
-export const AlonsoPage = CreateDriverPage("Fernando Alonso", AlonsoImg);
-export const StrollPage = CreateDriverPage("Lance Stroll", StrollImg);
-export const OconPage = CreateDriverPage("Esteban Ocon", OconImg);
-export const GaslyPage = CreateDriverPage("Pierre Gasly", GaslyImg);
-export const AlbonPage = CreateDriverPage("Alexander Albon", AlbonImg);
-export const BottasPage = CreateDriverPage("Valtteri Bottas", BottasImg);
-export const ZhouPage = CreateDriverPage("Zhou Guanyu", ZhouImg);
-export const MagnussenPage = CreateDriverPage("Kevin Magnussen", MagnussenImg);
-export const NorrisPage = CreateDriverPage("Lando Norris", NorrisImg);
+export const TsunodaPage = CreateDriverPage("Yuki Tsunoda", TsunodaImg, 67, 77);
+export const AlonsoPage = CreateDriverPage("Fernando Alonso", AlonsoImg, 78, 88);
+export const StrollPage = CreateDriverPage("Lance Stroll", StrollImg, 89, 99);
+export const OconPage = CreateDriverPage("Esteban Ocon", OconImg, 100, 110);
+export const GaslyPage = CreateDriverPage("Pierre Gasly", GaslyImg, 111, 121);
+export const AlbonPage = CreateDriverPage("Alexander Albon", AlbonImg, 122, 132);
+export const BottasPage = CreateDriverPage("Valtteri Bottas", BottasImg, 133, 143);
+export const ZhouPage = CreateDriverPage("Zhou Guanyu", ZhouImg, 144, 154);
+export const MagnussenPage = CreateDriverPage("Kevin Magnussen", MagnussenImg, 155, 165);
+export const NorrisPage = CreateDriverPage("Lando Norris", NorrisImg, 166, 176);

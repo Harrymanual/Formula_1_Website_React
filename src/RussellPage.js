@@ -10,7 +10,7 @@ const RussellPage = () => {
     fetch('/driver_info.txt')
       .then(response => response.text())
       .then(text => {
-        const lines = text.split('\n').slice(0, 11); //red bull lines from txt file. hardocoding works fine for this as its just not worth it to spend that much time on something so trivial
+        const lines = text.split('\n').slice(34, 44); 
         setInfoList(lines);
       })
       .catch(error => console.error(error)); //logs the error from fetch

@@ -23,6 +23,10 @@ import AlphaPage from './AlphaPage';
 import VerstappenPage from './VerstappenPage';
 import HamiltonPage from './HamiltonPage';
 import PerezPage from './PerezPage';
+import LeclercPage from './LeclercPage';
+import RussellPage from './RussellPage';
+import SainzPage from './SainzPage';
+import { TsunodaPage, AlonsoPage, StrollPage, OconPage, GaslyPage, AlbonPage, BottasPage, ZhouPage, MagnussenPage, NorrisPage } from './CreateDriverPage';
 
 
 import './homebutton.css'
@@ -52,6 +56,21 @@ const App = () => {
         <Route path="/drivers/hamilton" element={<HamiltonPage />} />
         <Route path="/drivers/verstappen" element={<VerstappenPage />} />
         <Route path="/drivers/perez" element={<PerezPage />} />
+        <Route path="/drivers/russell" element={<RussellPage />} />
+        <Route path="/drivers/leclerc" element={<LeclercPage />} />
+        <Route path="/drivers/sainz" element={<SainzPage />} />
+
+        <Route path="/drivers/tsunoda" element={<TsunodaPage />} />
+        <Route path="/drivers/alonso" element={<AlonsoPage />} />
+        <Route path="/drivers/stroll" element={<StrollPage />} />
+        <Route path="/drivers/ocon" element={<OconPage />} />
+        <Route path="/drivers/gasly" element={<GaslyPage />} />
+        <Route path="/drivers/albon" element={<AlbonPage />} />
+        <Route path="/drivers/guanyu" element={<ZhouPage />} />
+        <Route path="/drivers/magnussen" element={<MagnussenPage />} />
+        <Route path="/drivers/norris" element={<NorrisPage />} />
+        <Route path="/drivers/bottas" element={<BottasPage />} />
+
         
       </Routes>
       <div className="buttons-container">

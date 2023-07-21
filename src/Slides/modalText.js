@@ -12,11 +12,18 @@ const modalTexts = [
     'Modal text 3', 
     'Modal text 4', 
     'Modal text 5'],
+
     ['Modal text 6', 
     'Modal text 7', 
     'Modal text 8', 
-    'Modal text 9', 
+    `If you are interested in a fix I discovered for the driver pages please checkout my github page and look at the code because I am so happy with the fix I found
+    
+    Here is how I was doing it one page at a time: https://github.com/Harrymanual/Formula_1_Website_React/blob/main/src/VerstappenPage.js
+    
+    Here is the fix which I think is awesome: https://github.com/Harrymanual/Formula_1_Website_React/blob/main/src/CreateDriverPage.js`, 
+
     'Modal text 10'],
+
     ['Modal text 11', 
     'Modal text 12', 
     'Modal text 13', 

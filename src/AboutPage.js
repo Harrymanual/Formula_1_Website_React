@@ -40,7 +40,7 @@ const circlePositions = [
 // Texts to display inside each circle for each slide.
 const circleTexts = [
   ['Why?', 'Home Page', 'Team Page', 'Individual Teams', 'Drivers Page'],
-  ['About Page', 'Git', 'Individual Drivers', 'Text 9', 'Text 10'],
+  ['About Page', 'Git', 'Individual Drivers', 'Driver Fix', 'Text 10'],
   ['Text 11', 'Text 12', 'Text 13', 'Text 14', 'Text 15'],
 ];
 

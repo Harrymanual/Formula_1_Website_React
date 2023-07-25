@@ -31,6 +31,7 @@ import { TsunodaPage, AlonsoPage, StrollPage, OconPage, GaslyPage, AlbonPage, Bo
 
 import './homebutton.css'
 import './appStyle.css'
+import Leaderboard from './Leaderboard';
 
 
 const App = () => {
@@ -41,6 +42,8 @@ const App = () => {
         <Route path="/teams" element={<TeamsPage />} />
         <Route path="/drivers" element={<DriversPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
+
 
         <Route path="/teams/red-bull" element={<RedBullPage />} />
         <Route path="/teams/mercedes" element={<MercedesPage />} />

@@ -46,11 +46,14 @@ const getBackgroundColor = (score) => {
     switch (score) {
       case 'X': return 'red';
       case 25: return 'gold';
-      case 18: return 'silver';
-      case 15: return '#cd7f32';
-      case 'Veto': return 'red';
       case 26 : return 'gold';
+      case 18: return 'silver';
+      case 19: return 'silver';
+      case 15: return '#cd7f32';
+      case 16: return '#cd7f32';
+      case 'Veto': return 'red';
       case 'DNF' : return 'red';
+      case 13: return '#b854d4';
       default: return 'white';
     }
   };
@@ -62,36 +65,73 @@ const getBackgroundColor = (score) => {
   
   const Leaderboard = () => {
     return (
-      <div>
-        <h1 style={{ textAlign: 'center', fontWeight: 'bold' }}>Season 1 F1 2022</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Player</th>
-              {races.map((race, index) => (
-                <th key={index}>
-                  <img src={race.flag} alt={race.name} width="50" height="30" />
-                </th>
-              ))}
-              <th style={{ backgroundColor: 'lime' }}>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            {players.map((player) => (
-              <tr key={player}>
-                <td>{player}</td>
-                {scores[player].map((score, index) => (
-                  <td key={index} style={{backgroundColor: getBackgroundColor(score)}}>
-                    {score}
-                  </td>
-                ))}
-                <td style={{ backgroundColor: 'lime' }}>{getTotalScore(scores[player])}</td>
-              </tr>
+      <div style={{ textAlign: 'center' }}>
+      {/* Table for F1 Points System */}
+      <table style={{ margin: 'auto', borderCollapse: 'collapse' }}>
+        <thead>
+          <tr>
+            <th style={{ padding: '8px', backgroundColor: '#e8e8e8', color: 'black' }}>Position</th>
+            <th style={{ padding: '8px', backgroundColor: 'gold', color: 'black' }}>1st</th>
+            <th style={{ padding: '8px', backgroundColor: 'silver', color: 'black' }}>2nd</th>
+            <th style={{ padding: '8px', backgroundColor: '#cd7f32', color: 'black' }}>3rd</th>
+            <th style={{ padding: '8px', backgroundColor: 'white', color: 'black' }}>4th</th>
+            <th style={{ padding: '8px', backgroundColor: 'white', color: 'black' }}>5th</th>
+            <th style={{ padding: '8px', backgroundColor: 'white', color: 'black' }}>6th</th>
+            <th style={{ padding: '8px', backgroundColor: 'white', color: 'black' }}>7th</th>
+            <th style={{ padding: '8px', backgroundColor: 'white', color: 'black' }}>8th</th>
+            <th style={{ padding: '8px', backgroundColor: 'white', color: 'black' }}>9th</th>
+            <th style={{ padding: '8px', backgroundColor: 'white', color: 'black' }}>10th</th>
+            <th style={{ padding: '8px', backgroundColor: '#b854d4', color: 'black' }}>Fastest Lap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={{ backgroundColor: '#e8e8e8', color: 'black', padding: '8px' }}>Points</td>
+            <td style={{ backgroundColor: 'gold', color: 'black', padding: '8px' }}>25</td>
+            <td style={{ backgroundColor: 'silver', color: 'black', padding: '8px' }}>18</td>
+            <td style={{ backgroundColor: '#cd7f32', color: 'black', padding: '8px' }}>15</td>
+            <td style={{ backgroundColor: 'white', padding: '8px' }}>12</td>
+            <td style={{ backgroundColor: 'white', padding: '8px' }}>10</td>
+            <td style={{ backgroundColor: 'white', padding: '8px' }}>8</td>
+            <td style={{ backgroundColor: 'white', padding: '8px' }}>6</td>
+            <td style={{ backgroundColor: 'white', padding: '8px' }}>4</td>
+            <td style={{ backgroundColor: 'white', padding: '8px' }}>2</td>
+            <td style={{ backgroundColor: 'white', color: 'black', padding: '8px' }}>1</td>
+            <td style={{ backgroundColor: '#b854d4', color: 'black', padding: '8px' }}>+1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1 style={{ fontWeight: 'bold', textAlign: 'center'}}>Season 1 F1 2022</h1>
+
+      <table style={{ margin: 'auto', borderCollapse: 'collapse' }}>
+        <thead>
+          <tr>
+            <th>Player</th>
+            {races.map((race, index) => (
+              <th key={index}>
+                <img src={race.flag} alt={race.name} width="50" height="30" />
+              </th>
             ))}
-          </tbody>
-        </table>
-      </div>
-    );
-  };
+            <th style={{ backgroundColor: 'lime' }}>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {players.map((player) => (
+            <tr key={player}>
+              <td>{player}</td>
+              {scores[player].map((score, index) => (
+                <td key={index} style={{ backgroundColor: getBackgroundColor(score) }}>
+                  {score}
+                </td>
+              ))}
+              <td style={{ backgroundColor: 'lime' }}>{getTotalScore(scores[player])}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
   
   export default Leaderboard;
